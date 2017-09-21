@@ -1,0 +1,146 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot/app\AboutComponent.html" />
+    <Content Remove="wwwroot/fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\app\about.component.ts" />
+    <Content Include="wwwroot\app\app.component.ts" />
+    <Content Include="wwwroot\app\app.module.ts" />
+    <Content Include="wwwroot\app\app.routing.ts" />
+    <Content Include="wwwroot\app\change.ticket.list.component.ts" />
+    <Content Include="wwwroot\app\contact.component.ts" />
+    <Content Include="wwwroot\app\incident.ticket.list.component.ts" />
+    <Content Include="wwwroot\app\index.component.ts" />
+    <Content Include="wwwroot\app\login.component.ts" />
+    <Content Include="wwwroot\app\main.js" />
+    <Content Include="wwwroot\app\main.js.map" />
+    <Content Include="wwwroot\app\main.ts" />
+    <Content Include="wwwroot\app\register.component.ts" />
+    <Content Include="wwwroot\app\role.ts" />
+    <Content Include="wwwroot\app\services\tickets.service.ts" />
+    <Content Include="wwwroot\app\services\users.service.js" />
+    <Content Include="wwwroot\app\services\users.service.js.map" />
+    <Content Include="wwwroot\app\services\users.service.ts" />
+    <Content Include="wwwroot\app\ticket.create.component.ts" />
+    <Content Include="wwwroot\app\ticket.edit.component.ts" />
+    <Content Include="wwwroot\app\ticket.incident.component.ts" />
+    <Content Include="wwwroot\app\ticket.index.component.js" />
+    <Content Include="wwwroot\app\ticket.index.component.js.map" />
+    <Content Include="wwwroot\app\ticket.index.component.ts" />
+    <Content Include="wwwroot\app\ticket.ts" />
+    <Content Include="wwwroot\app\user.ts" />
+    <Content Include="wwwroot\css\animate.min.css" />
+    <Content Include="wwwroot\css\bootstrap.min.css" />
+    <Content Include="wwwroot\css\demo.css" />
+    <Content Include="wwwroot\css\light-bootstrap-dashboard.css" />
+    <Content Include="wwwroot\css\pe-icon-7-stroke.css" />
+    <Content Include="wwwroot\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="wwwroot\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="wwwroot\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="wwwroot\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="wwwroot\images\default-avatar.png" />
+    <Content Include="wwwroot\images\faces\face-0.jpg" />
+    <Content Include="wwwroot\images\faces\face-1.jpg" />
+    <Content Include="wwwroot\images\faces\face-2.jpg" />
+    <Content Include="wwwroot\images\faces\face-3.jpg" />
+    <Content Include="wwwroot\images\faces\face-4.jpg" />
+    <Content Include="wwwroot\images\faces\face-5.jpg" />
+    <Content Include="wwwroot\images\faces\face-6.jpg" />
+    <Content Include="wwwroot\images\faces\face-7.jpg" />
+    <Content Include="wwwroot\images\faces\tim_vector.jpe" />
+    <Content Include="wwwroot\images\favicon.ico" />
+    <Content Include="wwwroot\images\loading-bubbles.svg" />
+    <Content Include="wwwroot\images\mask.png" />
+    <Content Include="wwwroot\images\new_logo.png" />
+    <Content Include="wwwroot\images\sidebar-1.jpg" />
+    <Content Include="wwwroot\images\sidebar-2.jpg" />
+    <Content Include="wwwroot\images\sidebar-3.jpg" />
+    <Content Include="wwwroot\images\sidebar-4.jpg" />
+    <Content Include="wwwroot\images\sidebar-5.jpg" />
+    <Content Include="wwwroot\images\tim_80x80.png" />
+    <Content Include="wwwroot\js\bootstrap-checkbox-radio-switch.js" />
+    <Content Include="wwwroot\js\bootstrap-notify.js" />
+    <Content Include="wwwroot\js\bootstrap-select.js" />
+    <Content Include="wwwroot\js\bootstrap.min.js" />
+    <Content Include="wwwroot\js\chartist.min.js" />
+    <Content Include="wwwroot\js\demo.js" />
+    <Content Include="wwwroot\js\jquery-1.10.2.js" />
+    <Content Include="wwwroot\js\light-bootstrap-dashboard.js" />
+    <Content Include="wwwroot\sass\lbd\mixins\_buttons.scss" />
+    <Content Include="wwwroot\sass\lbd\mixins\_cards.scss" />
+    <Content Include="wwwroot\sass\lbd\mixins\_chartist.scss" />
+    <Content Include="wwwroot\sass\lbd\mixins\_icons.scss" />
+    <Content Include="wwwroot\sass\lbd\mixins\_inputs.scss" />
+    <Content Include="wwwroot\sass\lbd\mixins\_labels.scss" />
+    <Content Include="wwwroot\sass\lbd\mixins\_morphing-buttons.scss" />
+    <Content Include="wwwroot\sass\lbd\mixins\_navbars.scss" />
+    <Content Include="wwwroot\sass\lbd\mixins\_social-buttons.scss" />
+    <Content Include="wwwroot\sass\lbd\mixins\_tabs.scss" />
+    <Content Include="wwwroot\sass\lbd\mixins\_transparency.scss" />
+    <Content Include="wwwroot\sass\lbd\mixins\_vendor-prefixes.scss" />
+    <Content Include="wwwroot\sass\lbd\_alerts.scss" />
+    <Content Include="wwwroot\sass\lbd\_buttons.scss" />
+    <Content Include="wwwroot\sass\lbd\_cards.scss" />
+    <Content Include="wwwroot\sass\lbd\_chartist.scss" />
+    <Content Include="wwwroot\sass\lbd\_checkbox-radio-switch.scss" />
+    <Content Include="wwwroot\sass\lbd\_dropdown.scss" />
+    <Content Include="wwwroot\sass\lbd\_footers.scss" />
+    <Content Include="wwwroot\sass\lbd\_inputs.scss" />
+    <Content Include="wwwroot\sass\lbd\_misc.scss" />
+    <Content Include="wwwroot\sass\lbd\_mixins.scss" />
+    <Content Include="wwwroot\sass\lbd\_navbars.scss" />
+    <Content Include="wwwroot\sass\lbd\_responsive.scss" />
+    <Content Include="wwwroot\sass\lbd\_sidebar-and-main-panel.scss" />
+    <Content Include="wwwroot\sass\lbd\_tables.scss" />
+    <Content Include="wwwroot\sass\lbd\_typography.scss" />
+    <Content Include="wwwroot\sass\lbd\_variables.scss" />
+    <Content Include="wwwroot\sass\light-bootstrap-dashboard.scss" />
+    <Content Include="wwwroot\systemjs-angular-loader.js" />
+    <Content Include="wwwroot\systemjs.config.extras.js" />
+    <Content Include="wwwroot\systemjs.config.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.0.0-alpha6" />
+    <PackageReference Include="Bootstrap.v3.Datetimepicker" Version="4.17.45" />
+    <PackageReference Include="Bootstrap.v3.Datetimepicker.CSS" Version="4.17.45" />
+    <PackageReference Include="jQuery" Version="3.1.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.0" />
+    <PackageReference Include="Moment.js" Version="2.18.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChangeManagementApp.BusinessEntities\ChangeManagementApp.BusinessEntities.csproj" />
+    <EmbeddedResource Include="wwwroot/fonts\glyphicons-halflings-regular.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChangeManagementApp.Data\ChangeManagementApp.Data.csproj" />
+    <ProjectReference Include="..\Services\ChangeManagementApp.Services.csproj" />
+  </ItemGroup>
+
+</Project>

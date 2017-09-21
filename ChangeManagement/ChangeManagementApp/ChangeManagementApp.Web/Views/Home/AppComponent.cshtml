@@ -1,0 +1,229 @@
+﻿<div class="wrapper">
+    <div class="sidebar" data-color="blue" data-image="/images/sidebar-5.jpg">
+        <!--
+
+            Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+            Tip 2: you can also add an image using data-image tag
+
+        -->
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                <a class="simple-logo-text" href="/">
+                    PPIS-Telecom
+                </a>
+            </div>
+            <ul class="nav">
+                <li class="active">
+                    <a routerLink="/tickets" *ngIf="_userIsLogged">
+                        <i class="fa fa-indent" aria-hidden="true"></i>
+                        <p>My tickets</p>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/tickets/create" *ngIf="_userIsLogged">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        @*<i class="pe-7s-ticket"></i>*@
+                        <p>Create ticket</p>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/tickets/change" *ngIf="_user.role == 'Admin' || _user.role == 'ChangeManager'">
+                        <i class="fa fa-list-ul" aria-hidden="true"></i>
+                        <p>Change tickets</p>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/tickets/incident" *ngIf="_user.role == 'Admin' || _user.role == 'IncidentManager'">
+                        <i class="fa fa-list-ul" aria-hidden="true"></i>
+                        <p>Incident tickets</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html" *ngIf="_user.role == 'Admin' || _user.role == 'ChangeManager'">
+                        <i class="fa fa-history" aria-hidden="true"></i>
+                        <p>Change history</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="table.html" *ngIf="_user.role == 'Admin' || _user.role == 'IncidentManager'">
+                        <i class="fa fa-history" aria-hidden="true"></i>
+                        <p>Incident History</p>
+                    </a>
+                </li>
+                @*<li>
+                        <a href="typography.html">
+                            <i class="pe-7s-news-paper"></i>
+                            <p>Typography</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons.html">
+                            <i class="pe-7s-science"></i>
+                            <p>Icons</p>
+                        </a>
+                    </li>*@
+                @*<li>
+                        <a href="maps.html">
+                            <i class="pe-7s-map-marker"></i>
+                            <p>Maps</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="notifications.html">
+                            <i class="pe-7s-bell"></i>
+                            <p>Notifications</p>
+                        </a>
+                    </li>*@
+                <li class="active-pro">
+                    <a href="upgrade.html" *ngIf="_userIsLogged">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <p>Delete tickets</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @*<a class="navbar-brand" href="#">Dashboard</a>*@
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a class="dropdown-toggle" data-toggle="dropdown" routerLink="/register" *ngIf="_user.role == 'Admin'">
+                                <i class="pe-7s-add-user"></i>
+                                <p class="hidden-lg hidden-md">Add new user</p>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-globe"></i>
+                                <b class="caret hidden-sm hidden-xs"></b>
+                                <span class="notification hidden-sm hidden-xs">5</span>
+                                <p class="hidden-lg hidden-md">
+                                    5 Notifications
+                                    <b class="caret"></b>
+                                </p>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Notification 1</a></li>
+                                <li><a href="#">Notification 2</a></li>
+                                <li><a href="#">Notification 3</a></li>
+                                <li><a href="#">Notification 4</a></li>
+                                <li><a href="#">Another notification</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-search"></i>
+                                <p class="hidden-lg hidden-md">Search</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/about">
+                                <p>About</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                @*<i class="fa fa-user-o" aria-hidden="true"></i>*@
+                                <p>My profile</p>
+                            </a>
+                        </li>
+                        @*<li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <p>
+                                        Dropdown
+                                        <b class="caret"></b>
+                                    </p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>*@
+                        <li>
+                            <a routerLink="/login" *ngIf="!_userIsLogged">
+                                Log In
+                                @*<i class="fa fa-sign-in" aria-hidden="true"></i>*@
+                                @*<div *ngIf="!_userIsLogged;else user_name">Log in</div>*@
+                            </a>                            
+                        </li>
+                        <li class="dropdown" *ngIf="_userIsLogged">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> {{_user.username}}
+                                <i class="pe-7s-user"></i>
+                                <b class="caret hidden-sm hidden-xs"></b>
+                                @*<span class="notification hidden-sm hidden-xs">5</span>*@
+                                <p class="hidden-lg hidden-md">
+                                    5 Notifications
+                                    <b class="caret"></b>
+                                </p>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a (click)="logOut()">Log Out</a></li>
+                            </ul>
+                        </li>
+                        <ng-template #user_name>{{_user.username}}</ng-template>
+                        <li class="separator hidden-lg hidden-md"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container-fluid navbar-fixed-bottom">
+                    @*<nav class="pull-left">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Company
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Portfolio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>*@
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>document.write(new Date().getFullYear())</script> <a href="http://www.etf.unsa.ba">PPIS</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
